@@ -10,7 +10,7 @@ import os
 
 from scipy.special import gamma
 
-from KernelDensityFunction import FitKernelDensityFunction
+import FitKernelDensityFunction
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np

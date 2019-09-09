@@ -1,13 +1,14 @@
 import os
 
-from SPI_droughts import class_calculate_PET
+import class_calculate_PET
+import class_calculate_SPI
 import pandas as pd
 
 
 sss = class_calculate_PET.Calculate_PET()
 
 main_dir = os.path.join(r'X:\hiwi\ElHachem\AdvancedPython\SPI_droughts')
-main_dir = sss.set_main_dir(main_dir)
+#main_dir = class_calculate_SPI.set_main_dir(main_dir)
 
 in_temp_file = os.path.join(main_dir,
                             r'data\SA_temp_data_1901_2015.csv')
