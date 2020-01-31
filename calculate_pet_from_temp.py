@@ -65,6 +65,7 @@ pet = [hargreaves_pet(doy, 31.443895, tmins, tmaxs, t_avg)
                                            in_temp_df_min.values,
                                            in_temp_df_max.values,
                                            mean_temp_Df.values)]
+
 df_pet = pd.DataFrame(index=in_temp_df_min.index, data=pet)
 
 # df_mtl = df_pet.resample('M', label='right', closed='right').sum()
