@@ -162,6 +162,7 @@ class FitKernelDensity(object):
             "Warning, x values are larger than 1"
         if xmin < -1:
             "Warning, x values are smaller than -1"
+
         return xticks, F_x
 
 
@@ -171,7 +172,7 @@ if __name__ == '__main__':
     os.chdir(main_dir)
     # change file's name ### ATTENTION SEPARATOR INDEX!
     ppt_data = pd.read_csv('pet_data.csv', index_col=0, sep=';')
-	
+
     data = np.sort(ppt_data.values)
 
     FitKernel = FitKernelDensity()
